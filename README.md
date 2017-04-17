@@ -62,7 +62,7 @@ Please create a separate branch for your pull request.
 
 ## License
 
-This theme is released under the MIT license. For more information read the [license](https://github.com/harvey/fsylum/blob/master/LICENSE.md).
+This theme is released under the MIT license. For more information read the [license](https://github.com/fsylum/harvey/blob/master/LICENSE.md).
 
 ## Acknowledgements
 
