@@ -1,0 +1,12 @@
+<footer class="site-footer">
+    <hr>
+    <p>
+        {{ with .Site.Params.footerText }}
+            {{ htmlUnescape  . }} &middot;
+        {{ end }}
+        {{ $count := len .Site.Menus.footer }}
+        {{ range $i, $e := .Site.Menus.footer }}
+            <a href="{{$e.URL}}">{{ $e.Name }}</a> {{ if ne (add $i 1) $count }}&middot;{{ end }}
+        {{ end }}
+    </p>
+</footer>

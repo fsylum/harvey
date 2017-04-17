@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+<header class="post-header is-large">
+    <h1 class="post-title">404</h1>
+    <p class="post-subtitle">Not Found</p>
+</header>
+
+<div class="post-content">
+    {{ range where .Data.Pages "Title" "404" }}
+        {{ .Content }}
+    {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

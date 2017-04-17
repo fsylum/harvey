@@ -1,0 +1,76 @@
+// =======================================================================
+// Single post
+// =======================================================================
+
+
+.post-header {
+    margin-bottom: $magic-number * 2;
+    text-align: center;
+}
+
+    .post-title {
+        font-size: $font-size-base * 2;
+        margin-bottom: $magic-number / 4;
+        margin-top: 0;
+    }
+
+    .is-large .post-title {
+        font-size: $font-size-base * 6;
+    }
+
+    .post-subtitle {
+        color: $gray-light;
+        font-size: 90%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+.post-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .post-list-item {
+        border-bottom: 1px solid $gray-lighter;
+        overflow: hidden;
+        padding: $magic-number / 2 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+
+    }
+
+        .post-list-date {
+            color: $gray-light;
+            display: inline-block;
+            font-size: 80%;
+            letter-spacing: 1px;
+            min-width: 100px;
+            text-transform: uppercase;
+        }
+
+        .post-list-title {
+            border-bottom: none;
+            font-size: $font-size-base * 1.125;
+            font-weight: 700;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $gray-light;
+            }
+        }
+
+.post-content a {
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $link-color;
+        color: #fff;
+    }
+}
+
+#TableOfContents > ul {
+    list-style: none;
+    padding-left: 0;
+}

@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+{{ partial "site-header.html" . }}
+
+<div class="post-content">
+    {{ .Content }}
+</div>
+
+{{ $posts := len (where .Site.RegularPages "Section" "blog") }}
+{{ if gt $posts 0 }}
+    {{ with .Site.Params.recentPostsText }}
+        <h3>{{ . }}</h3>
+    {{ else }}
+        <h3>Recent Posts</h3>
+    {{ end }}
+
+    <ul class="post-list">
+        {{ $count := default 5 (.Site.Params.recentPostsCount) }}
+        {{ range (first $count (where .Site.RegularPages "Section" "blog")) }}
+            <li class="post-list-item">
+                <a class="post-list-title" href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    </ul>
+    <a href="/blog">View all posts</a>
+{{ end }}
+
+{{ partial "footer.html" . }}

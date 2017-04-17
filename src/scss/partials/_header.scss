@@ -1,0 +1,61 @@
+// =======================================================================
+// Header
+// =======================================================================
+
+
+// Site navigation
+// -----------------------------------------------------------------------
+.site-nav {
+    margin-bottom: $magic-number * 3;
+    padding: $magic-number / 2;
+    text-align: right;
+    width: 100%;
+
+}
+
+    .site-nav-item {
+        color: $gray-light;
+        border-bottom: none;
+        display: inline-block;
+        font-size: 90%;
+        font-weight: 400;
+        margin: 0 $magic-number / 4;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: $gray-darker;
+        }
+
+        &.active {
+            font-weight: 700;
+        }
+    }
+
+
+// Site header
+// -----------------------------------------------------------------------
+.site-header {
+    text-align: center;
+
+    hr {
+        margin: $magic-number * 2 auto;
+    }
+}
+
+    .site-title {
+        font-size: $font-size-base * 2;
+        margin-bottom: $magic-number / 4;
+        margin-top: 0;
+
+        a {
+            border-bottom: none;
+        }
+    }
+
+    .site-tagline {
+        color: $gray-light;
+        font-size: $font-size-base;
+        font-weight: normal;
+        margin-top: 0;
+    }

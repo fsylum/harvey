@@ -1,0 +1,36 @@
+// =======================================================================
+// Helpers
+// =======================================================================
+
+
+// Mixins
+// -----------------------------------------------------------------------
+
+/**
+ * Custom media queries based on strictly width
+ *
+ * See: https://github.com/drublic/Sass-Mixins/blob/master/partials/_breakpoint.scss
+ */
+@mixin at-least( $width ) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin until( $width ) {
+    @media screen and (max-width: $width - 0.01) {
+        @content;
+    }
+}
+
+/**
+ * Cross browser placeholder style
+ *
+ * See: https://css-tricks.com/snippets/css/style-placeholder-text/
+ */
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+}

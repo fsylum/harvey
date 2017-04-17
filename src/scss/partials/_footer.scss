@@ -1,0 +1,30 @@
+// =======================================================================
+// Footer
+// =======================================================================
+
+
+.site-footer {
+    color: $gray-light;
+    font-size: 90%;
+    padding: $magic-number / 2 0;
+    text-align: center;
+
+    hr {
+        margin: $magic-number * 2 auto;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        border-bottom: none;
+        color: $gray-light;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: $gray-darker;
+        }
+    }
+}

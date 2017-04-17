@@ -1,0 +1,47 @@
+languageCode = "en-us"
+title = "Harvey"
+baseURL = "http://example.org/"
+theme = "harvey"
+
+[params]
+author = "Harvey"
+tagline = "Some fancy tagline about my blog"
+description = "My blog description"
+dateFormat = "Jan 2, 2006"
+themeColor = "#222"
+recentPostsCount = 7
+recentPostsText = 'Recent Posts'
+footerText = "&copy; 2017 All rights reserved."
+googleSiteVerification = "XXXXXXXXXXXXXX"
+
+# Main menu at top left
+[[menu.main]]
+name = "Blog"
+identifier = "blog"
+url = "/blog/"
+weight = 1
+
+[[menu.main]]
+name = "Github"
+identifier = "github"
+url = "https://github.com/example"
+weight = 2
+
+# Footer menu
+[[menu.footer]]
+name = "Github"
+identifier = "github"
+url = "https://github.com/example"
+weight = 1
+
+[[menu.footer]]
+name = "Twitter"
+identifier = "twitter"
+url = "https://twitter.com/example"
+weight = 2
+
+[[menu.footer]]
+name = "RSS"
+identifier = "rss"
+url = "/index.xml"
+weight = 3

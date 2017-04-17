@@ -1,0 +1,95 @@
+// =======================================================================
+// Variables
+// =======================================================================
+
+
+// Colours
+// -----------------------------------------------------------------------
+$color-primary:             #2b303b !default;
+
+// 5 shades of gray
+$gray-darker:               #222 !default;
+$gray-dark:                 #333 !default;
+$gray:                      #555 !default;
+$gray-light:                #999 !default;
+$gray-lighter:              #eee !default;
+
+// Layout
+// -----------------------------------------------------------------------
+$site-width:                540px !default;
+$hr-width:                  150px !default;
+
+// Base body style
+// -----------------------------------------------------------------------
+$body-bg:                   #fff !default;
+$body-color:                $gray-dark !default;
+
+// Selection
+// -----------------------------------------------------------------------
+$selection-bg:              $gray-lighter !default;
+$selection-color:           $body-color !default;
+
+// Horizontal rule
+// -----------------------------------------------------------------------
+$hr-color:                  $gray-lighter !default;
+
+// Typography
+// -----------------------------------------------------------------------
+
+// Font family
+//$font-family-sans-serif:    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif:    'Roboto', Arial, sans-serif !default;
+$font-family-serif:         Georgia, "Times New Roman", Times, serif !default;
+$font-family-mono:          Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-size-root:            16px !default;
+
+$font-family-base-inactive: Arial, sans-serif !default;
+$font-family-base-active:   $font-family-sans-serif !default;
+$font-size-base:            1rem !default;
+$font-weight-base:          400 !default;
+$line-height-base:          1.75 !default;
+
+// Heading
+$heading-color:             $gray-darker !default;
+$heading-font-family:       inherit !default;
+$heading-line-height:       1.1 !default;
+$heading-font-weight:       600 !default;
+
+// Heading size
+$font-size-h1:              2.5rem !default;
+$font-size-h2:              2rem !default;
+$font-size-h3:              1.75rem !default;
+$font-size-h4:              1.5rem !default;
+$font-size-h5:              1.25rem !default;
+$font-size-h6:              1rem !default;
+
+// Link
+// -----------------------------------------------------------------------
+$link-color:                $body-color !default;
+$link-border-color:         $body-color !default;
+$link-hover-border-color:   $link-color !default;
+
+// Semantics
+$abbr-border-color:         $gray-light !default;
+$blockquote-border-color:   $gray-darker !default;
+$code-bg:                   $gray-lighter !default;
+$code-color:                $body-color !default;
+$code-font-family:          $font-family-mono !default;
+$code-font-size:            90% !default;
+$mark-bg:                   #FFDC00 !default;
+$pre-bg:                    #2b303b !default;
+$pre-color:                 #c0c5ce !default;
+$small-font-size:           75% !default;
+
+// Table (also used for figcaption)
+// -----------------------------------------------------------------------
+$caption-color:             $gray-light !default;
+$caption-font-size:         90% !default;
+$caption-font-style:        italic !default;
+$caption-side:              bottom !default;
+$caption-text-align:        center !default;
+
+// Magic number (for padding, margin etc)
+// -----------------------------------------------------------------------
+$magic-number:              $font-size-base * $line-height-base !default;

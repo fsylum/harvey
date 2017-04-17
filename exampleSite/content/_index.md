@@ -1,0 +1,1 @@
+You can put some content here, and it will appear above the recent post list (if you have any). This section is perfect for introductory text to your blog visitor. See `exampleSite` folder in theme directory on how to manage content with this theme.

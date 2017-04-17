@@ -1,0 +1,24 @@
+// =======================================================================
+// Tables
+// =======================================================================
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 $magic-number;
+    width: 100%;
+}
+
+caption {
+    caption-side: $caption-side;
+    color: $caption-color;
+    font-style: $caption-font-style;
+    font-size: $caption-font-size;
+    padding-bottom: $magic-number;
+    padding-top: $magic-number;
+    text-align: $caption-text-align;
+}
+
+th {
+    text-align: left;
+}

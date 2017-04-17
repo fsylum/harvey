@@ -1,0 +1,12 @@
+name = "Harvey"
+license = "MIT"
+licenselink = "https://github.com/fsylum/harvey/blob/master/LICENSE.md"
+description = "Minimalist Hugo theme for developers"
+homepage = "https://github.com/fsylum/harvey"
+tags = ["archives", "blog", "minimal", "personal", "responsive"]
+features = ["disqus", "google analytics", "opengraph", "responsive", "toc"]
+min_version = 0.19
+
+[author]
+name = "Firdaus Zahari"
+homepage = "https://fsylum.net"

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <!-- Color the status bar on mobile devices -->
+        {{ with .Site.Params.themeColor }}
+            <meta name="theme-color" content="{{ . }}">
+        {{ end }}
+
+        <!-- Google Site Verification -->
+        {{ with .Site.Params.googleSiteVerification }}
+            <meta name="google-site-verification" content="{{ . }}">
+        {{ end }}
+
+        {{ if .RSSLink }}
+            <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+        {{ end }}
+
+        {{ template "_internal/opengraph.html" . }}
+        {{ template "_internal/google_news.html" . }}
+        {{ template "_internal/schema.html" . }}
+        {{ template "_internal/twitter_cards.html" . }}
+
+        {{ .Hugo.Generator }}
+
+        <title>
+            {{ if .IsHome }}
+                 {{ .Site.Params.Tagline }} - {{ .Site.Title }}
+            {{ else }}
+                {{ .Title }} &middot; {{ .Site.Title }}
+            {{ end }}
+        </title>
+
+        <!-- Place favicon.ico in the root directory -->
+        {{ with .Site.Params.favicon }}
+            <link rel="shortcut icon" href="{{ . | absURL }}">
+        {{ end }}
+
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/app.min.css">
+    </head>
+    <body>
+
+        {{ partial "site-nav.html" . }}
+
+        <main class="site-main">
+            <div class="container">
+
