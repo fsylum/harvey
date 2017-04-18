@@ -10,7 +10,9 @@
         {{ .TableOfContents }}
     {{ end }}
 
+    {{ partial "before-content.html" . }}
     {{ .Content }}
+    {{ partial "after-content.html" . }}
     {{ template "_internal/disqus.html" . }}
 </div>
 

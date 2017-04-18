@@ -9,7 +9,9 @@
 {{ end }}
 
 <div class="post-content">
+    {{ partial "before-content.html" . }}
     {{ .Content }}
+    {{ partial "after-content.html" . }}
 </div>
 
 {{ partial "footer.html" . }}

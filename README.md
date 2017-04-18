@@ -1,6 +1,6 @@
 # Harvey
 
-Harvey is a minimalistic, monotone theme for developers that is hugely influenced by the minimalist design of default theme of [Cactus static site generator](https://github.com/koenbok/Cactus). This theme designed to be light and fast, without sacrificing much of core blogging features such as dedicated about page, RSS feeds support, syntax highlighting for source code and Disqus-powered comment system.
+Harvey is a minimal blogging Hugo theme for developers that is hugely influenced by the minimalist design of default theme of [Cactus static site generator](https://github.com/koenbok/Cactus). This theme is designed to be light and fast, without sacrificing much of core blogging features such as dedicated about page, RSS feed support, syntax highlighting for source code and Disqus-powered comment system.
 
 ## Installation
 
@@ -53,6 +53,10 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 
 * No taxonomies (category, tags) support
 * No pagination
+
+## Extending
+
+By default, this theme provides two empty partials, namely `before-content.html` and `after-content.html`. To extend single page view, create `before-content.html` and `after-content.html` files in your `layouts/partials` directory, and these files will be loaded accordingly.
 
 ## Contributing
 
